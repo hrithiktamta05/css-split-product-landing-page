@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Calibri', 'sans-serif';
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.container .left{
+    width: 50%;
+    height: 100%;
+    background: url("/img/watch-1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.container .left:hover{
+    width: 90%;
+}
+.left-content, .right-content{
+    transition: all 0.5s;
+}
+
+.container .right{
+    width: 50%;
+    height: 100%;
+    background: url("/img/watch-2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.left-wrapper, .right-wrapper{
+    text-align: center;
+}
+.container .right:hover{
+    width: 90%;
+}
+
+.container .left:hover .left-content, .container .right:hover .right-content{
+    transform: scale(1.2, 1.2);
+}
+.left-wrapper .heading{
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.btn{
+    cursor: pointer;
+}
+.left-wrapper .btn{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 25px;
+}
+
+.right-wrapper .btn{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 25px;
+}
+
+.right-wrapper .heading{
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+
+
